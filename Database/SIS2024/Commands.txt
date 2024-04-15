@@ -1,0 +1,4 @@
+dotnet tool install --global dotnet-ef
+dotnet tool update --global dotnet-ef
+# Voorwaarden: database draait, connection string is juist in appsettings.json
+dotnet ef dbcontext scaffold "Name=ConnectionStrings:DefaultConnectionString" Microsoft.EntityFrameworkCore.SqlServer --context-dir Context --output-dir DTO -p .\Libraries\Assignment.Infrastructure -s .\Apps\Assignment.WPF.App

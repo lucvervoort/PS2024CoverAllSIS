@@ -128,7 +128,7 @@ namespace Generic.Host.WPF.App
                 if (_consoleContent != value)
                 {
                     _consoleContent = value;
-                    RaisePropertyChanged();
+                    RaisePropertyChanged(); // goud waard!
                 }
             }
         }

@@ -62,10 +62,11 @@ namespace Generic.Host.WPF.App
                     var cs = context.Configuration.GetConnectionString("DefaultConnectionString");
 
                     // Registreer hier je DbContext klasse bij DI ...
+            
                     /*
                     services.AddDbContext<MyDbContext>(
                         dbContextOptions => dbContextOptions
-                            .UseMySql(cs, ServerVersion.AutoDetect(cs))
+                            .UseSqlServer(cs)
                             // The following three options help with debugging, but should
                             // be changed or removed for production.
                             .LogTo((msg) => System.Diagnostics.Debug.WriteLine(msg), LogLevel.Debug)
